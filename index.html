@@ -1,141 +1,326 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" itemscope itemtype="https://schema.org/FoodEstablishment">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chico Grill - Hambúrgueria Artesanal | O verdadeiro sabor do cheddar</title>
-    
-    <!-- Meta tags SEO -->
-    <meta name="description" content="Chico Grill: hambúrgueres artesanais com cheddar cremoso. Mais de 40 unidades em São Paulo. Peça pelo delivery e experimente o melhor burger da cidade.">
-    <meta name="keywords" content="hambúrgueria, cheddar, delivery, São Paulo, lanches artesanais, Chico Grill, espetos, burgers">
+    <title>Chico Grill — Hambúrgueres Artesanais e Espetos em São Paulo | 40+ Unidades</title>
+    <meta name="description" content="Chico Grill: hambúrgueres artesanais com cheddar cremoso e espetos na brasa em São Paulo. Mais de 40 unidades. Avaliação 4.9 ⭐. Delivery pelo iFood e WhatsApp. Peça agora!">
+    <meta name="keywords" content="hambúrgueria São Paulo, hambúrguer artesanal SP, cheddar burger São Paulo, espeto na brasa SP, Chico Grill, delivery hambúrguer SP, melhor hamburguer São Paulo, burger cheddar, espetinho São Paulo, lanche artesanal, hambúrguer zona sul SP, hamburgueria entrega rápida">
     <meta name="author" content="Chico Grill">
-    <meta name="robots" content="index, follow">
-    
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="theme-color" content="#f97316">
+    <link rel="canonical" href="https://www.chicogrill.com.br">
+
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="restaurant">
     <meta property="og:url" content="https://www.chicogrill.com.br">
-    <meta property="og:title" content="Chico Grill - O Cheddar Mais Insano de São Paulo">
-    <meta property="og:description" content="Hambúrgueres artesanais com cheddar cremoso. Mais de 40 unidades. Conheça nosso cardápio completo.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630&q=80">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.chicogrill.com.br">
-    <meta property="twitter:title" content="Chico Grill - O Cheddar Mais Insano de São Paulo">
-    <meta property="twitter:description" content="Hambúrgueres artesanais com cheddar cremoso. Mais de 40 unidades. Conheça nosso cardápio completo.">
-    <meta property="twitter:image" content="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630&q=80">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23f97316'/%3E%3Ctext x='50' y='70' font-size='60' text-anchor='middle' fill='%23ffffff' font-family='Arial'%3E🍔%3C/text%3E%3C/svg%3E">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Swiper CSS para carrosséis -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    
-    <!-- Font Awesome 6 Professional -->
+    <meta property="og:title" content="Chico Grill — O Cheddar Mais Insano de São Paulo | 40+ Unidades">
+    <meta property="og:description" content="Hambúrgueres artesanais com cheddar cremoso e espetos na brasa. Delivery rápido por toda SP. Avaliação 4.9 estrelas. Peça pelo iFood ou WhatsApp!">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=1200&h=630&fit=crop">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Chico Grill">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Chico Grill — O Cheddar Mais Insano de São Paulo">
+    <meta name="twitter:description" content="Hambúrgueres artesanais com cheddar cremoso. 40+ unidades em SP. Delivery rápido!">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=1200&h=630&fit=crop">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FoodEstablishment",
+      "name": "Chico Grill",
+      "description": "Hambúrgueres artesanais com cheddar cremoso e espetos na brasa. Mais de 40 unidades em São Paulo.",
+      "url": "https://www.chicogrill.com.br",
+      "telephone": "+55-11-91592-5731",
+      "image": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=1200&h=630&fit=crop",
+      "servesCuisine": ["Hamburgueria", "Churrasco", "Fast Food Artesanal"],
+      "priceRange": "R$8 - R$47",
+      "currenciesAccepted": "BRL",
+      "paymentAccepted": "Cash, Credit Card, PIX",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "150000",
+        "bestRating": "5"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "18:00",
+        "closes": "23:00"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "hasMenu": "https://www.chicogrill.com.br/#cardapio",
+      "sameAs": [
+        "https://instagram.com/chicogrill_01",
+        "https://linktr.ee/Chicogrill__01"
+      ],
+      "numberOfEmployees": { "@type": "QuantitativeValue", "minValue": 40 },
+      "foundingDate": "2018"
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.chicogrill.com.br" },
+        { "@type": "ListItem", "position": 2, "name": "Cardápio", "item": "https://www.chicogrill.com.br/#cardapio" },
+        { "@type": "ListItem", "position": 3, "name": "Unidades", "item": "https://www.chicogrill.com.br/#unidades" }
+      ]
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual o horário de funcionamento da Chico Grill?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A Chico Grill funciona de segunda a domingo, das 18h às 23h." }
+        },
+        {
+          "@type": "Question",
+          "name": "Quantas unidades a Chico Grill tem em São Paulo?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A Chico Grill possui mais de 40 unidades espalhadas por toda São Paulo e Grande SP." }
+        },
+        {
+          "@type": "Question",
+          "name": "Como pedir delivery na Chico Grill?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Você pode pedir pelo iFood, WhatsApp (11) 91592-5731, ou acessar todas as opções em linktr.ee/Chicogrill__01." }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual o hambúrguer mais pedido da Chico Grill?",
+          "acceptedAnswer": { "@type": "Answer", "text": "O Big Najla é o mais pedido: burger artesanal de costela 180g, cheddar cremoso, vinagrete, barbecue e molho especial por R$17." }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Preload críticos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
-    
-    <!-- AOS Animation Library -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+    <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- CURSOR PERSONALIZADO -->
+    <div class="cursor" id="cursor" aria-hidden="true"></div>
+    <div class="cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+
+    <!-- LOADER -->
+    <div class="page-loader" id="loader" role="status" aria-label="Carregando Chico Grill">
+        <div class="loader-logo">CHICO<span>GRILL</span></div>
+        <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+
     <!-- NAVBAR -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Menu principal">
         <div class="container nav-container">
-            <a href="#" class="logo">
+            <a href="#" class="logo" aria-label="Chico Grill - Página inicial">
                 <span class="logo-text">CHICO<span class="logo-accent">GRILL</span></span>
             </a>
-            <ul class="nav-menu">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#cardapio">Cardápio</a></li>
-                <li><a href="#unidades">Unidades</a></li>
-                <li><a href="#delivery" class="nav-cta"><i class="fas fa-motorcycle"></i> Delivery</a></li>
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li role="none"><a href="#sobre" class="nav-link" role="menuitem">Sobre</a></li>
+                <li role="none"><a href="#cardapio" class="nav-link" role="menuitem">Cardápio</a></li>
+                <li role="none"><a href="#unidades" class="nav-link" role="menuitem">Unidades</a></li>
+                <li role="none">
+                    <a href="#delivery" class="nav-cta" role="menuitem">
+                        <i class="fas fa-motorcycle" aria-hidden="true"></i>
+                        <span>Delivery</span>
+                    </a>
+                </li>
             </ul>
-            <div class="hamburger">
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="hero-slider">
-            <div class="slide active" style="background-image: url('images/d.jpg')"></div>
-            <div class="slide" style="background-image: url('images/e.jpg')"></div>
-            <div class="slide" style="background-image: url('images/f.jpg')"></div>
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-label="Banner principal Chico Grill">
+        <div class="hero-slider" role="img" aria-label="Fotos dos hambúrgueres Chico Grill">
+            <div class="slide active" style="background-image:url('images/d.jpg')"></div>
+            <div class="slide" style="background-image:url('images/e.jpg')"></div>
+            <div class="slide" style="background-image:url('images/f.jpg')"></div>
         </div>
         <div class="hero-overlay"></div>
+        <div class="hero-noise" aria-hidden="true"></div>
+
         <div class="container hero-content">
-            <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
-                <span class="hero-badge">Desde 2018 | 40+ Unidades</span>
-                <h1 class="hero-title">O <span class="text-gradient">cheddar</span> mais insano de São Paulo</h1>
-                <p class="hero-subtitle">Espetos, burgers artesanais e muito sabor. Mais de 40 unidades espalhadas por toda São Paulo. Experimente o verdadeiro churrasco em forma de hambúrguer.</p>
-                <div class="hero-buttons">
-                    <a href="#cardapio" class="btn btn-primary"><i class="fas fa-utensils"></i> Cardápio Completo</a>
-                    <a href="#delivery" class="btn btn-secondary"><i class="fas fa-motorcycle"></i> Pedir Agora</a>
-                    <a href="https://instagram.com/chicogrill_01" target="_blank" class="btn btn-outline"><i class="fab fa-instagram"></i> @chicogrill_01</a>
+            <div class="hero-text">
+                <div class="hero-badge" data-aos="fade-down" data-aos-duration="800">
+                    <span class="badge-dot" aria-hidden="true"></span>
+                    Desde 2018 &nbsp;·&nbsp; 40+ Unidades em São Paulo
+                </div>
+                <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    O <em>cheddar</em><br>mais insano<br>de São Paulo
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
+                    Espetos artesanais, burgers incríveis e muito sabor.<br class="br-desktop">
+                    O verdadeiro churrasco em forma de hambúrguer.
+                </p>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <a href="#cardapio" class="btn btn-primary">
+                        <i class="fas fa-utensils" aria-hidden="true"></i>
+                        Ver Cardápio
+                    </a>
+                    <a href="#delivery" class="btn btn-secondary">
+                        <i class="fas fa-motorcycle" aria-hidden="true"></i>
+                        Pedir Agora
+                    </a>
+                    <a href="https://instagram.com/chicogrill_01" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                        @chicogrill_01
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-stats" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300" aria-label="Estatísticas Chico Grill">
+                <div class="hero-stat">
+                    <span class="hero-stat-number">40<sup>+</sup></span>
+                    <span class="hero-stat-label">Unidades</span>
+                </div>
+                <div class="hero-stat-divider" aria-hidden="true"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">4.9</span>
+                    <span class="hero-stat-label">Avaliação</span>
+                </div>
+                <div class="hero-stat-divider" aria-hidden="true"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">150K</span>
+                    <span class="hero-stat-label">Clientes</span>
                 </div>
             </div>
         </div>
-        <div class="hero-indicators">
-            <span class="indicator active"></span>
-            <span class="indicator"></span>
-            <span class="indicator"></span>
+
+        <div class="hero-scroll" aria-hidden="true">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+
+        <div class="hero-indicators" role="tablist" aria-label="Slides do banner">
+            <span class="indicator active" role="tab" aria-selected="true" aria-label="Slide 1" tabindex="0"></span>
+            <span class="indicator" role="tab" aria-selected="false" aria-label="Slide 2" tabindex="0"></span>
+            <span class="indicator" role="tab" aria-selected="false" aria-label="Slide 3" tabindex="0"></span>
         </div>
     </section>
 
-    <!-- UNIDADES - BOTÃO PARA MODAL MELHORADO -->
-    <section id="unidades" class="unidades">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle center">Onde estamos</span>
-                <h2 class="section-title center">Mais de <span class="text-gradient">40 unidades</span> em São Paulo</h2>
-                <p class="unidades-text">Clique no botão abaixo para ver todas as nossas lojas</p>
-            </div>
-            
-            
-            
-            <!-- Botão para abrir modal -->
-            <div class="unidades-cta" data-aos="fade-up">
-                <button id="openModalBtn" class="btn btn-primary btn-large">
-                    <i class="fas fa-store"></i> Ver todas as 40+ unidades para chamar a atenção do público
-                </button>
-            </div>
+    <!-- MARQUEE STRIP -->
+    <div class="marquee-strip" aria-hidden="true">
+        <div class="marquee-track">
+            <span>🍔 BURGERS ARTESANAIS</span>
+            <span>🔥 ESPETOS NA BRASA</span>
+            <span>🧀 CHEDDAR CREMOSO</span>
+            <span>🛵 DELIVERY RÁPIDO</span>
+            <span>⭐ 4.9 ESTRELAS</span>
+            <span>📍 40+ UNIDADES</span>
+            <span>🍔 BURGERS ARTESANAIS</span>
+            <span>🔥 ESPETOS NA BRASA</span>
+            <span>🧀 CHEDDAR CREMOSO</span>
+            <span>🛵 DELIVERY RÁPIDO</span>
+            <span>⭐ 4.9 ESTRELAS</span>
+            <span>📍 40+ UNIDADES</span>
         </div>
-    </section>
+    </div>
 
-    <!-- SOBRE SECTION -->
+    <!-- SOBRE -->
     <section id="sobre" class="sobre">
         <div class="container">
             <div class="sobre-grid">
                 <div class="sobre-images" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="image-grid">
-                        <img src="images/c.jpg" alt="Hambúrguer Chico Grill" class="grid-img img-main">
-                        <img src="images/a.jpg" alt="Preparo artesanal" class="grid-img img-secondary">
-                        <img src="images/b.jpg" alt="Cheddar cremoso" class="grid-img img-tertiary">
+                    <div class="image-mosaic">
+                        <div class="mosaic-main">
+                            <img src="images/c.jpg" alt="Hambúrguer artesanal Chico Grill com cheddar cremoso" width="600" height="400" loading="lazy">
+                            <div class="mosaic-badge">
+                                <span class="badge-year">2018</span>
+                                <span class="badge-text">Fundação</span>
+                            </div>
+                        </div>
+                        <div class="mosaic-secondary">
+                            <img src="images/a.jpg" alt="Preparo artesanal dos hambúrgueres Chico Grill" width="300" height="220" loading="lazy">
+                        </div>
+                        <div class="mosaic-tertiary">
+                            <img src="images/b.jpg" alt="Cheddar cremoso derretido no hambúrguer Chico Grill" width="300" height="220" loading="lazy">
+                            <div class="mosaic-overlay">
+                                <i class="fas fa-fire" aria-hidden="true"></i>
+                                <span>Artesanal</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="sobre-content" data-aos="fade-left" data-aos-duration="1000">
-                    <span class="section-subtitle">Nossa História</span>
-                    <h2 class="section-title">Mais que uma <span class="text-gradient">hamburgueria</span>, uma paixão</h2>
-                    <p class="sobre-text">A Chico Grill nasceu da vontade de oferecer hambúrgueres artesanais de verdade, com ingredientes de alta qualidade e um sabor inconfundível. Hoje, somos referência em São Paulo com mais de 40 unidades espalhadas por toda cidade.</p>
-                    <p class="sobre-text">Cada hambúrguer é preparado no momento, com carnes selecionadas, pães artesanais e nosso exclusivo molho de cheddar. Além dos famosos burgers, temos espetos no estilo churrasco que são sucesso por onde passam.</p>
-                    
+                    <span class="section-tag">Nossa História</span>
+                    <h2 class="section-title">
+                        Mais que uma<br>
+                        <em class="text-gradient">hamburgueria</em>,<br>
+                        uma paixão
+                    </h2>
+                    <p class="sobre-text">A Chico Grill nasceu da vontade de oferecer hambúrgueres artesanais de verdade, com ingredientes de alta qualidade e um sabor inconfundível. Hoje, somos referência em São Paulo com mais de 40 unidades espalhadas por toda a cidade.</p>
+                    <p class="sobre-text">Cada hambúrguer é preparado no momento, com carnes selecionadas, pães artesanais e nosso exclusivo molho de cheddar. Além dos famosos burgers, temos espetos no estilo churrasco que são sucesso onde quer que estejamos.</p>
+
+                    <div class="sobre-features">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-leaf" aria-hidden="true"></i></div>
+                            <div>
+                                <h3>Ingredientes Frescos</h3>
+                                <p>Carnes selecionadas todo dia</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-fire-burner" aria-hidden="true"></i></div>
+                            <div>
+                                <h3>Preparo Artesanal</h3>
+                                <p>Feito na hora, com cuidado</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-medal" aria-hidden="true"></i></div>
+                            <div>
+                                <h3>Qualidade Garantida</h3>
+                                <p>4.9 estrelas de avaliação</p>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="sobre-stats">
                         <div class="stat-item">
-                            <span class="stat-number" data-count="40">0</span>
+                            <span class="stat-number" data-count="40">0</span><sup>+</sup>
                             <span class="stat-label">Unidades</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number" data-count="150">0</span>
-                            <span class="stat-label">Mil Clientes</span>
+                            <span class="stat-number" data-count="150">0</span><sup>K</sup>
+                            <span class="stat-label">Clientes</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number" data-count="4.9">0</span>
@@ -147,901 +332,459 @@
         </div>
     </section>
 
-    <!-- CARDÁPIO COMPLETO COM CARROSSÉIS -->
-    <section id="cardapio" class="cardapio-completo">
+    <!-- CARDÁPIO -->
+    <section id="cardapio" class="cardapio">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle center">Sabores únicos</span>
-                <h2 class="section-title center">Nosso <span class="text-gradient">cardápio</span></h2>
-                <p class="section-description">Espetos no estilo churrasco e burgers artesanais com o verdadeiro sabor da Chico Grill</p>
+                <span class="section-tag center">Sabores Únicos</span>
+                <h2 class="section-title center">Nosso <em class="text-gradient">Cardápio</em></h2>
+                <p class="section-description">Espetos na brasa e burgers artesanais — o verdadeiro sabor da Chico Grill</p>
             </div>
 
-            <!-- ESPETOS CARROSSEL -->
-            <div class="menu-categoria" data-aos="fade-up">
-                <h3 class="categoria-titulo"><i class="fas fa-fire"></i> ESPETOS</h3>
+            <!-- TABS DO CARDÁPIO -->
+            <div class="menu-tabs" data-aos="fade-up" data-aos-delay="100" role="tablist" aria-label="Categorias do cardápio">
+                <button class="menu-tab active" data-tab="espetos" role="tab" aria-selected="true" aria-controls="tab-espetos">
+                    <i class="fas fa-fire" aria-hidden="true"></i> Espetos
+                </button>
+                <button class="menu-tab" data-tab="burgers" role="tab" aria-selected="false" aria-controls="tab-burgers">
+                    <i class="fas fa-burger" aria-hidden="true"></i> Burgers
+                </button>
+                <button class="menu-tab" data-tab="bebidas" role="tab" aria-selected="false" aria-controls="tab-bebidas">
+                    <i class="fas fa-wine-bottle" aria-hidden="true"></i> Bebidas
+                </button>
+            </div>
+
+            <!-- ESPETOS -->
+            <div class="menu-panel active" id="tab-espetos" role="tabpanel" data-aos="fade-up" data-aos-delay="200">
                 <div class="swiper espetos-swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="menu-item-card">
-                                <div class="menu-item-image">
-                                    <img src="images/ca.jpg" alt="Espeto de Carne">
+                            <div class="menu-card">
+                                <div class="menu-card-img">
+                                    <img src="images/ca.jpg" alt="Espeto de Carne Bovina Chico Grill" loading="lazy">
+                                    <div class="menu-card-overlay" aria-hidden="true"><i class="fas fa-plus"></i></div>
                                 </div>
-                                <div class="menu-item-info">
-                                    <h4>CARNE</h4>
+                                <div class="menu-card-body">
+                                    <h3>CARNE</h3>
                                     <p>Espeto de carne bovina selecionada</p>
-                                    <span class="menu-item-price">R$ 12,00</span>
+                                    <span class="menu-price">R$ 12,00</span>
                                 </div>
                             </div>
                         </div>
-                        
                         <div class="swiper-slide">
-                            <div class="menu-item-card">
-                                <div class="menu-item-image">
-                                    <img src="images/misto.jpg" alt="Espeto Misto">
+                            <div class="menu-card">
+                                <div class="menu-card-img">
+                                    <img src="images/misto.jpg" alt="Espeto Misto Carne e Frango Chico Grill" loading="lazy">
+                                    <div class="menu-card-overlay" aria-hidden="true"><i class="fas fa-plus"></i></div>
                                 </div>
-                                <div class="menu-item-info">
-                                    <h4>MISTO</h4>
+                                <div class="menu-card-body">
+                                    <h3>MISTO</h3>
                                     <p>Carne e frango no espeto</p>
-                                    <span class="menu-item-price">R$ 13,00</span>
+                                    <span class="menu-price">R$ 13,00</span>
                                 </div>
                             </div>
                         </div>
-                        
                         <div class="swiper-slide">
-                            <div class="menu-item-card">
-                                <div class="menu-item-image">
-                                    <img src="images/ka.jpg" alt="Espeto de Kafta">
+                            <div class="menu-card">
+                                <div class="menu-card-img">
+                                    <img src="images/ka.jpg" alt="Espeto de Kafta Artesanal Chico Grill" loading="lazy">
+                                    <div class="menu-card-overlay" aria-hidden="true"><i class="fas fa-plus"></i></div>
                                 </div>
-                                <div class="menu-item-info">
-                                    <h4>KAFTA</h4>
+                                <div class="menu-card-body">
+                                    <h3>KAFTA</h3>
                                     <p>Kafta artesanal com especiarias</p>
-                                    <span class="menu-item-price">R$ 12,00</span>
+                                    <span class="menu-price">R$ 12,00</span>
                                 </div>
                             </div>
                         </div>
-                        
                         <div class="swiper-slide">
-                            <div class="menu-item-card">
-                                <div class="menu-item-image">
-                                    <img src="images/co.jpg" alt="Espeto de Coração">
+                            <div class="menu-card">
+                                <div class="menu-card-img">
+                                    <img src="images/co.jpg" alt="Espeto de Coração de Frango Chico Grill" loading="lazy">
+                                    <div class="menu-card-overlay" aria-hidden="true"><i class="fas fa-plus"></i></div>
                                 </div>
-                                <div class="menu-item-info">
-                                    <h4>CORAÇÃO</h4>
+                                <div class="menu-card-body">
+                                    <h3>CORAÇÃO</h3>
                                     <p>Coração de frango grelhado</p>
-                                    <span class="menu-item-price">R$ 14,00</span>
+                                    <span class="menu-price">R$ 14,00</span>
                                 </div>
                             </div>
                         </div>
-                        
                         <div class="swiper-slide">
-                            <div class="menu-item-card">
-                                <div class="menu-item-image">
-                                    <img src="images/tu.jpg" alt="Espeto de Tulipa">
+                            <div class="menu-card">
+                                <div class="menu-card-img">
+                                    <img src="images/tu.jpg" alt="Espeto de Tulipa Sobrecoxa Chico Grill" loading="lazy">
+                                    <div class="menu-card-overlay" aria-hidden="true"><i class="fas fa-plus"></i></div>
                                 </div>
-                                <div class="menu-item-info">
-                                    <h4>TULIPA</h4>
+                                <div class="menu-card-body">
+                                    <h3>TULIPA</h3>
                                     <p>Sobrecoxa de frango no espeto</p>
-                                    <span class="menu-item-price">R$ 13,00</span>
+                                    <span class="menu-price">R$ 13,00</span>
                                 </div>
                             </div>
                         </div>
-                        
                         <div class="swiper-slide">
-                            <div class="menu-item-card">
-                                <div class="menu-item-image">
-                                    <img src="images/mi.jpg" alt="Espeto de Panceta">
+                            <div class="menu-card">
+                                <div class="menu-card-img">
+                                    <img src="images/mi.jpg" alt="Espeto de Panceta Suína Crocante Chico Grill" loading="lazy">
+                                    <div class="menu-card-overlay" aria-hidden="true"><i class="fas fa-plus"></i></div>
                                 </div>
-                                <div class="menu-item-info">
-                                    <h4>PANCETA</h4>
+                                <div class="menu-card-body">
+                                    <h3>PANCETA</h3>
                                     <p>Panceta suína crocante</p>
-                                    <span class="menu-item-price">R$ 15,00</span>
+                                    <span class="menu-price">R$ 15,00</span>
                                 </div>
                             </div>
                         </div>
-                        
                         <div class="swiper-slide">
-                            <div class="menu-item-card">
-                                <div class="menu-item-image">
-                                    <img src="images/pao.jpg" alt="Pão de Alho">
+                            <div class="menu-card">
+                                <div class="menu-card-img">
+                                    <img src="images/pao.jpg" alt="Pão de Alho na Chapa Chico Grill" loading="lazy">
+                                    <div class="menu-card-overlay" aria-hidden="true"><i class="fas fa-plus"></i></div>
                                 </div>
-                                <div class="menu-item-info">
-                                    <h4>PÃO DE ALHO</h4>
+                                <div class="menu-card-body">
+                                    <h3>PÃO DE ALHO</h3>
                                     <p>Pão de alho na chapa</p>
-                                    <span class="menu-item-price">R$ 8,00</span>
+                                    <span class="menu-price">R$ 8,00</span>
                                 </div>
                             </div>
                         </div>
-                        
                         <div class="swiper-slide">
-                            <div class="menu-item-card">
-                                <div class="menu-item-image">
-                                    <img src="images/file.jpg" alt="Filé de Frango">
+                            <div class="menu-card">
+                                <div class="menu-card-img">
+                                    <img src="images/file.jpg" alt="Filé de Frango Grelhado Chico Grill" loading="lazy">
+                                    <div class="menu-card-overlay" aria-hidden="true"><i class="fas fa-plus"></i></div>
                                 </div>
-                                <div class="menu-item-info">
-                                    <h4>FILÉ DE FRANGO</h4>
+                                <div class="menu-card-body">
+                                    <h3>FILÉ DE FRANGO</h3>
                                     <p>Filé de frango grelhado</p>
-                                    <span class="menu-item-price">R$ 12,00</span>
+                                    <span class="menu-price">R$ 12,00</span>
                                 </div>
                             </div>
                         </div>
-                        
                         <div class="swiper-slide">
-                            <div class="menu-item-card">
-                                <div class="menu-item-image">
-                                    <img src="images/qui.jpg" alt="Queijo Coalho">
+                            <div class="menu-card">
+                                <div class="menu-card-img">
+                                    <img src="images/qui.jpg" alt="Queijo Coalho Grelhado Chico Grill" loading="lazy">
+                                    <div class="menu-card-overlay" aria-hidden="true"><i class="fas fa-plus"></i></div>
                                 </div>
-                                <div class="menu-item-info">
-                                    <h4>QUEIJO COALHO</h4>
+                                <div class="menu-card-body">
+                                    <h3>QUEIJO COALHO</h3>
                                     <p>Queijo coalho grelhado</p>
-                                    <span class="menu-item-price">R$ 10,00</span>
+                                    <span class="menu-price">R$ 10,00</span>
                                 </div>
                             </div>
                         </div>
-                        
                         <div class="swiper-slide">
-                            <div class="menu-item-card">
-                                <div class="menu-item-image">
-                                    <img src="images/li.jpg" alt="Linguiça Toscana">
+                            <div class="menu-card">
+                                <div class="menu-card-img">
+                                    <img src="images/li.jpg" alt="Linguiça Toscana Artesanal Chico Grill" loading="lazy">
+                                    <div class="menu-card-overlay" aria-hidden="true"><i class="fas fa-plus"></i></div>
                                 </div>
-                                <div class="menu-item-info">
-                                    <h4>LINGUIÇA TOSCANA</h4>
+                                <div class="menu-card-body">
+                                    <h3>LINGUIÇA TOSCANA</h3>
                                     <p>Linguiça toscana artesanal</p>
-                                    <span class="menu-item-price">R$ 12,00</span>
+                                    <span class="menu-price">R$ 12,00</span>
                                 </div>
                             </div>
                         </div>
-                        
                         <div class="swiper-slide">
-                            <div class="menu-item-card">
-                                <div class="menu-item-image">
-                                    <img src="images/li.jpg" alt="Linguiça Apimentada">
+                            <div class="menu-card">
+                                <div class="menu-card-img">
+                                    <img src="images/li.jpg" alt="Linguiça Apimentada Artesanal Chico Grill" loading="lazy">
+                                    <div class="menu-card-overlay" aria-hidden="true"><i class="fas fa-plus"></i></div>
                                 </div>
-                                <div class="menu-item-info">
-                                    <h4>LINGUIÇA APIMENTADA</h4>
+                                <div class="menu-card-body">
+                                    <h3>LINGUIÇA APIMENTADA</h3>
                                     <p>Linguiça artesanal apimentada</p>
-                                    <span class="menu-item-price">R$ 13,00</span>
+                                    <span class="menu-price">R$ 13,00</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next" aria-label="Próximo"></div>
+                    <div class="swiper-button-prev" aria-label="Anterior"></div>
                 </div>
             </div>
 
-            <!-- BURGERS CARROSSEL DESTAQUE -->
-            <div class="menu-categoria" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="categoria-titulo"><i class="fas fa-burger"></i> BURGERS ARTESANAIS</h3>
+            <!-- BURGERS -->
+            <div class="menu-panel" id="tab-burgers" role="tabpanel">
                 <div class="swiper burgers-swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="burger-card destaque">
-                                <div class="burger-image">
-                                    <img src="images/naja.jpg" alt="Big Najla">
-                                    <div class="burger-tag">Mais pedido</div>
+                            <div class="burger-card">
+                                <div class="burger-img">
+                                    <img src="images/naja.jpg" alt="Big Najla - Hambúrguer Mais Pedido Chico Grill - Costela 180g com Cheddar" loading="lazy">
+                                    <div class="burger-tag popular">Mais Pedido</div>
+                                    <div class="burger-overlay" aria-hidden="true"><a href="#delivery"><i class="fas fa-plus"></i> Pedir</a></div>
                                 </div>
-                                <div class="burger-info">
-                                    <h3>BIG NAJLA</h3>
+                                <div class="burger-body">
+                                    <div class="burger-header">
+                                        <h3>BIG NAJLA</h3>
+                                        <span class="burger-badge">Simples</span>
+                                    </div>
                                     <p>Burger artesanal de costela 180g, cheddar cremoso, vinagrete, barbecue e molho especial</p>
                                     <div class="burger-footer">
                                         <span class="burger-price">R$ 17,00</span>
-                                        <a href="#delivery" class="burger-order"><i class="fas fa-plus"></i></a>
+                                        <a href="#delivery" class="burger-btn" aria-label="Pedir Big Najla"><i class="fas fa-plus" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div class="swiper-slide">
-                            <div class="burger-card destaque">
-                                <div class="burger-image">
-                                    <img src="images/jojo.jpg" alt="Big Jojo">
+                            <div class="burger-card">
+                                <div class="burger-img">
+                                    <img src="images/jojo.jpg" alt="Big Jojo - Hambúrguer Duplo Chico Grill" loading="lazy">
                                     <div class="burger-tag">Duplo</div>
+                                    <div class="burger-overlay" aria-hidden="true"><a href="#delivery"><i class="fas fa-plus"></i> Pedir</a></div>
                                 </div>
-                                <div class="burger-info">
-                                    <h3>BIG JOJO</h3>
+                                <div class="burger-body">
+                                    <div class="burger-header">
+                                        <h3>BIG JOJO</h3>
+                                        <span class="burger-badge">Duplo</span>
+                                    </div>
                                     <p>Burger duplo artesanal de costela, cheddar, vinagrete, barbecue e molho especial</p>
                                     <div class="burger-footer">
                                         <span class="burger-price">R$ 27,00</span>
-                                        <a href="#delivery" class="burger-order"><i class="fas fa-plus"></i></a>
+                                        <a href="#delivery" class="burger-btn" aria-label="Pedir Big Jojo"><i class="fas fa-plus" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div class="swiper-slide">
-                            <div class="burger-card destaque">
-                                <div class="burger-image">
-                                    <img src="images/toguro.jpg" alt="Big Toguro">
+                            <div class="burger-card">
+                                <div class="burger-img">
+                                    <img src="images/toguro.jpg" alt="Big Toguro - Hambúrguer Triplo Chico Grill" loading="lazy">
                                     <div class="burger-tag">Triplo</div>
+                                    <div class="burger-overlay" aria-hidden="true"><a href="#delivery"><i class="fas fa-plus"></i> Pedir</a></div>
                                 </div>
-                                <div class="burger-info">
-                                    <h3>BIG TOGURO</h3>
+                                <div class="burger-body">
+                                    <div class="burger-header">
+                                        <h3>BIG TOGURO</h3>
+                                        <span class="burger-badge">Triplo</span>
+                                    </div>
                                     <p>Burger triplo artesanal de costela, cheddar, vinagrete, barbecue e molho especial</p>
                                     <div class="burger-footer">
                                         <span class="burger-price">R$ 37,00</span>
-                                        <a href="#delivery" class="burger-order"><i class="fas fa-plus"></i></a>
+                                        <a href="#delivery" class="burger-btn" aria-label="Pedir Big Toguro"><i class="fas fa-plus" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div class="swiper-slide">
-                            <div class="burger-card destaque">
-                                <div class="burger-image">
-                                    <img src="images/bony.jpg" alt="Big Bony">
+                            <div class="burger-card">
+                                <div class="burger-img">
+                                    <img src="images/bony.jpg" alt="Big Bony - Hambúrguer Quádruplo Chico Grill" loading="lazy">
                                     <div class="burger-tag">Quádruplo</div>
+                                    <div class="burger-overlay" aria-hidden="true"><a href="#delivery"><i class="fas fa-plus"></i> Pedir</a></div>
                                 </div>
-                                <div class="burger-info">
-                                    <h3>BIG BONY</h3>
+                                <div class="burger-body">
+                                    <div class="burger-header">
+                                        <h3>BIG BONY</h3>
+                                        <span class="burger-badge">Quádruplo</span>
+                                    </div>
                                     <p>Burger quádruplo artesanal de costela, cheddar, vinagrete, barbecue e molho especial</p>
                                     <div class="burger-footer">
                                         <span class="burger-price">R$ 47,00</span>
-                                        <a href="#delivery" class="burger-order"><i class="fas fa-plus"></i></a>
+                                        <a href="#delivery" class="burger-btn" aria-label="Pedir Big Bony"><i class="fas fa-plus" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div class="swiper-slide">
-                            <div class="burger-card destaque">
-                                <div class="burger-image">
-                                    <img src="images/pic.jpg" alt="Big Picanha">
+                            <div class="burger-card">
+                                <div class="burger-img">
+                                    <img src="images/pic.jpg" alt="Big Picanha - Hambúrguer com Bife de Picanha Chico Grill" loading="lazy">
                                     <div class="burger-tag">Picanha</div>
+                                    <div class="burger-overlay" aria-hidden="true"><a href="#delivery"><i class="fas fa-plus"></i> Pedir</a></div>
                                 </div>
-                                <div class="burger-info">
-                                    <h3>BIG PICANHA</h3>
+                                <div class="burger-body">
+                                    <div class="burger-header">
+                                        <h3>BIG PICANHA</h3>
+                                        <span class="burger-badge">Picanha</span>
+                                    </div>
                                     <p>Bife de picanha, cheddar, vinagrete, barbecue e molho especial</p>
                                     <div class="burger-footer">
                                         <span class="burger-price">R$ 21,00</span>
-                                        <a href="#delivery" class="burger-order"><i class="fas fa-plus"></i></a>
+                                        <a href="#delivery" class="burger-btn" aria-label="Pedir Big Picanha"><i class="fas fa-plus" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div class="swiper-slide">
-                            <div class="burger-card destaque">
-                                <div class="burger-image">
-                                    <img src="images/duplo.jpg" alt="Lanche de Espeto">
+                            <div class="burger-card">
+                                <div class="burger-img">
+                                    <img src="images/duplo.jpg" alt="Lanche de Espeto Especial Chico Grill" loading="lazy">
                                     <div class="burger-tag">Especial</div>
+                                    <div class="burger-overlay" aria-hidden="true"><a href="#delivery"><i class="fas fa-plus"></i> Pedir</a></div>
                                 </div>
-                                <div class="burger-info">
-                                    <h3>LANCHE DE ESPETO</h3>
+                                <div class="burger-body">
+                                    <div class="burger-header">
+                                        <h3>LANCHE DE ESPETO</h3>
+                                        <span class="burger-badge">Especial</span>
+                                    </div>
                                     <p>Carne do espeto no pão com vinagrete, barbecue e molho especial</p>
                                     <div class="burger-footer">
                                         <span class="burger-price">R$ 14,00</span>
-                                        <a href="#delivery" class="burger-order"><i class="fas fa-plus"></i></a>
+                                        <a href="#delivery" class="burger-btn" aria-label="Pedir Lanche de Espeto"><i class="fas fa-plus" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div class="swiper-slide">
-                            <div class="burger-card destaque">
-                                <div class="burger-image">
-                                    <img src="images/dup.jpg" alt="Lanche de Espeto Duplo">
+                            <div class="burger-card">
+                                <div class="burger-img">
+                                    <img src="images/dup.jpg" alt="Lanche de Espeto Duplo Chico Grill" loading="lazy">
                                     <div class="burger-tag">Duplo</div>
+                                    <div class="burger-overlay" aria-hidden="true"><a href="#delivery"><i class="fas fa-plus"></i> Pedir</a></div>
                                 </div>
-                                <div class="burger-info">
-                                    <h3>LANCHE DE ESPETO DUPLO</h3>
+                                <div class="burger-body">
+                                    <div class="burger-header">
+                                        <h3>LANCHE ESPETO DUPLO</h3>
+                                        <span class="burger-badge">Duplo</span>
+                                    </div>
                                     <p>Duas carnes do espeto no pão com vinagrete, barbecue e molho especial</p>
                                     <div class="burger-footer">
                                         <span class="burger-price">R$ 20,00</span>
-                                        <a href="#delivery" class="burger-order"><i class="fas fa-plus"></i></a>
+                                        <a href="#delivery" class="burger-btn" aria-label="Pedir Lanche Espeto Duplo"><i class="fas fa-plus" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next" aria-label="Próximo"></div>
+                    <div class="swiper-button-prev" aria-label="Anterior"></div>
                 </div>
             </div>
 
-            <!-- BEBIDAS CARROSSEL -->
-            <div class="menu-categoria" data-aos="fade-up" data-aos-delay="200">
-                <h3 class="categoria-titulo"><i class="fas fa-wine-bottle"></i> BEBIDAS</h3>
-                <div class="swiper bebidas-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="bebida-card">
-                                <div class="bebida-icon"><i class="fas fa-beer"></i></div>
-                                <h4>HEINEKEN</h4>
-                                <span class="bebida-preco">R$ 10,00</span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bebida-card">
-                                <div class="bebida-icon"><i class="fas fa-beer"></i></div>
-                                <h4>STELLA ARTOIS</h4>
-                                <span class="bebida-preco">R$ 10,00</span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bebida-card">
-                                <div class="bebida-icon"><i class="fas fa-beer"></i></div>
-                                <h4>BUDWEISER</h4>
-                                <span class="bebida-preco">R$ 10,00</span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bebida-card">
-                                <div class="bebida-icon"><i class="fas fa-beer"></i></div>
-                                <h4>EISENBAHN</h4>
-                                <span class="bebida-preco">R$ 10,00</span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bebida-card">
-                                <div class="bebida-icon"><i class="fas fa-beer"></i></div>
-                                <h4>BRAHMA DUPLO</h4>
-                                <span class="bebida-preco">R$ 6,00</span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bebida-card">
-                                <div class="bebida-icon"><i class="fas fa-beer"></i></div>
-                                <h4>SKOL</h4>
-                                <span class="bebida-preco">R$ 6,00</span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bebida-card">
-                                <div class="bebida-icon"><i class="fas fa-beer"></i></div>
-                                <h4>AMSTEL</h4>
-                                <span class="bebida-preco">R$ 6,00</span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bebida-card">
-                                <div class="bebida-icon"><i class="fas fa-cola"></i></div>
-                                <h4>REFRIGERANTE</h4>
-                                <span class="bebida-preco">R$ 6,00</span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bebida-card">
-                                <div class="bebida-icon"><i class="fas fa-wine-bottle"></i></div>
-                                <h4>SUCO</h4>
-                                <span class="bebida-preco">R$ 8,00</span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bebida-card">
-                                <div class="bebida-icon"><i class="fas fa-water"></i></div>
-                                <h4>ÁGUA</h4>
-                                <span class="bebida-preco">R$ 4,00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+            <!-- BEBIDAS -->
+            <div class="menu-panel" id="tab-bebidas" role="tabpanel">
+                <div class="bebidas-grid">
+                    <div class="bebida-card"><div class="bebida-icon"><i class="fas fa-beer" aria-hidden="true"></i></div><h3>HEINEKEN</h3><span class="bebida-preco">R$ 10,00</span></div>
+                    <div class="bebida-card"><div class="bebida-icon"><i class="fas fa-beer" aria-hidden="true"></i></div><h3>STELLA ARTOIS</h3><span class="bebida-preco">R$ 10,00</span></div>
+                    <div class="bebida-card"><div class="bebida-icon"><i class="fas fa-beer" aria-hidden="true"></i></div><h3>BUDWEISER</h3><span class="bebida-preco">R$ 10,00</span></div>
+                    <div class="bebida-card"><div class="bebida-icon"><i class="fas fa-beer" aria-hidden="true"></i></div><h3>EISENBAHN</h3><span class="bebida-preco">R$ 10,00</span></div>
+                    <div class="bebida-card"><div class="bebida-icon"><i class="fas fa-beer" aria-hidden="true"></i></div><h3>BRAHMA DUPLO</h3><span class="bebida-preco">R$ 6,00</span></div>
+                    <div class="bebida-card"><div class="bebida-icon"><i class="fas fa-beer" aria-hidden="true"></i></div><h3>SKOL</h3><span class="bebida-preco">R$ 6,00</span></div>
+                    <div class="bebida-card"><div class="bebida-icon"><i class="fas fa-beer" aria-hidden="true"></i></div><h3>AMSTEL</h3><span class="bebida-preco">R$ 6,00</span></div>
+                    <div class="bebida-card"><div class="bebida-icon"><i class="fas fa-bottle-water" aria-hidden="true"></i></div><h3>REFRIGERANTE</h3><span class="bebida-preco">R$ 6,00</span></div>
+                    <div class="bebida-card"><div class="bebida-icon"><i class="fas fa-wine-glass" aria-hidden="true"></i></div><h3>SUCO</h3><span class="bebida-preco">R$ 8,00</span></div>
+                    <div class="bebida-card"><div class="bebida-icon"><i class="fas fa-water" aria-hidden="true"></i></div><h3>ÁGUA</h3><span class="bebida-preco">R$ 4,00</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- MODAL DE UNIDADES MELHORADO -->
-    <div id="unidadesModal" class="modal">
+    <!-- UNIDADES -->
+    <section id="unidades" class="unidades">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag center">Onde Estamos</span>
+                <h2 class="section-title center">Mais de <em class="text-gradient">40 unidades</em><br>em São Paulo</h2>
+                <p class="section-description">Encontre a unidade mais próxima de você</p>
+            </div>
+            <div class="unidades-cta" data-aos="fade-up" data-aos-delay="100">
+                <button id="openModalBtn" class="btn btn-primary btn-large" aria-haspopup="dialog">
+                    <i class="fas fa-map-location-dot" aria-hidden="true"></i>
+                    Ver Todas as Unidades
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL DE UNIDADES -->
+    <div id="unidadesModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-backdrop"></div>
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Nossas <span class="text-gradient">Unidades</span></h2>
-                <span class="modal-close">&times;</span>
+                <div>
+                    <h2 id="modalTitle">Nossas <em class="text-gradient">Unidades</em></h2>
+                    <p>40+ lojas espalhadas por São Paulo e Grande SP</p>
+                </div>
+                <button class="modal-close" id="modalClose" aria-label="Fechar modal de unidades">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
             </div>
             <div class="modal-body">
-                <div class="regioes-tabs">
-                    <button class="tab-btn active" data-regiao="sul">Zona Sul</button>
-                    <button class="tab-btn" data-regiao="oeste">Zona Oeste</button>
-                    <button class="tab-btn" data-regiao="norte">Zona Norte/Leste</button>
-                    <button class="tab-btn" data-regiao="grandesp">Grande SP</button>
+                <div class="regioes-tabs" role="tablist" aria-label="Regiões de São Paulo">
+                    <button class="tab-btn active" data-regiao="sul" role="tab" aria-selected="true">
+                        <i class="fas fa-map-pin" aria-hidden="true"></i> Zona Sul
+                    </button>
+                    <button class="tab-btn" data-regiao="oeste" role="tab" aria-selected="false">
+                        <i class="fas fa-map-pin" aria-hidden="true"></i> Zona Oeste
+                    </button>
+                    <button class="tab-btn" data-regiao="norte" role="tab" aria-selected="false">
+                        <i class="fas fa-map-pin" aria-hidden="true"></i> Zona Norte/Leste
+                    </button>
+                    <button class="tab-btn" data-regiao="grandesp" role="tab" aria-selected="false">
+                        <i class="fas fa-map-pin" aria-hidden="true"></i> Grande SP
+                    </button>
                 </div>
-                
-                <div class="regioes-content">
-                    <!-- Zona Sul -->
-                    <div class="regiao-panel active" id="regiao-sul">
-                        <div class="unidades-lista">
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 1 - MOEMA</h4>
-                                    <p><i class="fas fa-map-pin"></i> Praça Nicolau Aranha Pachêco, 112 - Jardim Tres Marias</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 4 - AV ATLANTICA</h4>
-                                    <p><i class="fas fa-map-pin"></i> Praça Nicolau Aranha Pachêco, 112 - Jardim Tres Marias</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 8 - JARDIM MIRNA</h4>
-                                    <p><i class="fas fa-map-pin"></i> Av. Antonio Carlos Benjamin dos Santos, 3168</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 10 - CAPÃO</h4>
-                                    <p><i class="fas fa-map-pin"></i> Av. Comendador Sant'Anna, 1099 - Capão Redondo</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 11 - VILA DA SAUDE</h4>
-                                    <p><i class="fas fa-map-pin"></i> Av. Prof. Abraão de Morais, 1313</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 20 - JURUBATUBA</h4>
-                                    <p><i class="fas fa-map-pin"></i> Jurubatuba - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 22 - JARDIM ELIANA</h4>
-                                    <p><i class="fas fa-map-pin"></i> Av. Dona Belmira Marin, 6004</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 32 - M'BOI MIRIM</h4>
-                                    <p><i class="fas fa-map-pin"></i> M'Boi Mirim - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 33 - VILA FORMOSA</h4>
-                                    <p><i class="fas fa-map-pin"></i> Vila Formosa - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 35 - JARDIM SÃO LUIS</h4>
-                                    <p><i class="fas fa-map-pin"></i> Jardim São Luis - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 36 - ALVARENGA</h4>
-                                    <p><i class="fas fa-map-pin"></i> Alvarenga - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 38 - SANTO EDUARDO</h4>
-                                    <p><i class="fas fa-map-pin"></i> Santo Eduardo - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 40 - VILA NHOCUNE</h4>
-                                    <p><i class="fas fa-map-pin"></i> Av. Aldeia Manuel Antônio, 45</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                        </div>
+
+                <!-- ZONA SUL -->
+                <div class="regiao-panel active" id="regiao-sul" role="tabpanel">
+                    <div class="unidades-lista">
+                        <div class="unidade-card-modal"><div class="unidade-num">01</div><div class="unidade-info"><h4>LOJA 1 — MOEMA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Praça Nicolau Aranha Pachêco, 112 — Jardim Tres Marias</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">04</div><div class="unidade-info"><h4>LOJA 4 — AV ATLÂNTICA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Praça Nicolau Aranha Pachêco, 112 — Jardim Tres Marias</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">08</div><div class="unidade-info"><h4>LOJA 8 — JARDIM MIRNA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Antonio Carlos Benjamin dos Santos, 3168</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">10</div><div class="unidade-info"><h4>LOJA 10 — CAPÃO</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Comendador Sant'Anna, 1099 — Capão Redondo</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">11</div><div class="unidade-info"><h4>LOJA 11 — VILA DA SAÚDE</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Prof. Abraão de Morais, 1313</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">20</div><div class="unidade-info"><h4>LOJA 20 — JURUBATUBA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Jurubatuba — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">22</div><div class="unidade-info"><h4>LOJA 22 — JARDIM ELIANA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Dona Belmira Marin, 6004</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">32</div><div class="unidade-info"><h4>LOJA 32 — M'BOI MIRIM</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> M'Boi Mirim — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">35</div><div class="unidade-info"><h4>LOJA 35 — JARDIM SÃO LUÍS</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Jardim São Luís — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">36</div><div class="unidade-info"><h4>LOJA 36 — ALVARENGA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Alvarenga — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">38</div><div class="unidade-info"><h4>LOJA 38 — SANTO EDUARDO</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Santo Eduardo — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">40</div><div class="unidade-info"><h4>LOJA 40 — VILA NHOCUNE</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Aldeia Manuel Antônio, 45</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
                     </div>
-                    
-                    <!-- Zona Oeste -->
-                    <div class="regiao-panel" id="regiao-oeste">
-                        <div class="unidades-lista">
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 2 - VILA OLIMPIA</h4>
-                                    <p><i class="fas fa-map-pin"></i> Vila Olímpia - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 3 - FARIA LIMA</h4>
-                                    <p><i class="fas fa-map-pin"></i> Faria Lima - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 5 - PARQUE DAS ARVORES</h4>
-                                    <p><i class="fas fa-map-pin"></i> Parque das Árvores - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 14 - PINHEIROS</h4>
-                                    <p><i class="fas fa-map-pin"></i> Pinheiros - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 18 - SANTO AMARO</h4>
-                                    <p><i class="fas fa-map-pin"></i> Santo Amaro - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 19 - JARDIM PRIMAVERA</h4>
-                                    <p><i class="fas fa-map-pin"></i> Jardim Primavera - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 24 - RAPOSO</h4>
-                                    <p><i class="fas fa-map-pin"></i> Raposo - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 29 - OSASCO</h4>
-                                    <p><i class="fas fa-map-pin"></i> Osasco - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 30 - ANACÉ</h4>
-                                    <p><i class="fas fa-map-pin"></i> Anacé - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 31 - GRIMALDI</h4>
-                                    <p><i class="fas fa-map-pin"></i> Grimaldi - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 34 - ARARIBÁ</h4>
-                                    <p><i class="fas fa-map-pin"></i> Araribá - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 37 - SABARÁ</h4>
-                                    <p><i class="fas fa-map-pin"></i> Sabará - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+
+                <!-- ZONA OESTE -->
+                <div class="regiao-panel" id="regiao-oeste" role="tabpanel">
+                    <div class="unidades-lista">
+                        <div class="unidade-card-modal"><div class="unidade-num">02</div><div class="unidade-info"><h4>LOJA 2 — VILA OLÍMPIA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Vila Olímpia — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">03</div><div class="unidade-info"><h4>LOJA 3 — FARIA LIMA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Faria Lima — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">05</div><div class="unidade-info"><h4>LOJA 5 — PARQUE DAS ÁRVORES</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Parque das Árvores — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">14</div><div class="unidade-info"><h4>LOJA 14 — PINHEIROS</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Pinheiros — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">18</div><div class="unidade-info"><h4>LOJA 18 — SANTO AMARO</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Santo Amaro — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">19</div><div class="unidade-info"><h4>LOJA 19 — JARDIM PRIMAVERA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Jardim Primavera — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">24</div><div class="unidade-info"><h4>LOJA 24 — RAPOSO</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Raposo — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">29</div><div class="unidade-info"><h4>LOJA 29 — OSASCO</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Osasco — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">30</div><div class="unidade-info"><h4>LOJA 30 — ANACÉ</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Anacé — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">31</div><div class="unidade-info"><h4>LOJA 31 — GRIMALDI</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Grimaldi — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">34</div><div class="unidade-info"><h4>LOJA 34 — ARARIBÁ</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Araribá — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">37</div><div class="unidade-info"><h4>LOJA 37 — SABARÁ</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Sabará — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
                     </div>
-                    
-                    <!-- Zona Norte/Leste -->
-                    <div class="regiao-panel" id="regiao-norte">
-                        <div class="unidades-lista">
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 12 - JAGUARÉ</h4>
-                                    <p><i class="fas fa-map-pin"></i> Jaguaré - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 13 - HELIÓPOLIS</h4>
-                                    <p><i class="fas fa-map-pin"></i> Heliópolis - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 27 - CASA VERDE</h4>
-                                    <p><i class="fas fa-map-pin"></i> Casa Verde - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 34 - VILA FORMOSA</h4>
-                                    <p><i class="fas fa-map-pin"></i> Vila Formosa - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 38 - SANTO EDUARDO</h4>
-                                    <p><i class="fas fa-map-pin"></i> Santo Eduardo - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+
+                <!-- ZONA NORTE / LESTE -->
+                <div class="regiao-panel" id="regiao-norte" role="tabpanel">
+                    <div class="unidades-lista">
+                        <div class="unidade-card-modal"><div class="unidade-num">12</div><div class="unidade-info"><h4>LOJA 12 — JAGUARÉ</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Jaguaré — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">13</div><div class="unidade-info"><h4>LOJA 13 — HELIÓPOLIS</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Heliópolis — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">27</div><div class="unidade-info"><h4>LOJA 27 — CASA VERDE</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Casa Verde — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">33</div><div class="unidade-info"><h4>LOJA 33 — VILA FORMOSA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Vila Formosa — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">38</div><div class="unidade-info"><h4>LOJA 38 — SANTO EDUARDO</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Santo Eduardo — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
                     </div>
-                    
-                    <!-- Grande SP -->
-                    <div class="regiao-panel" id="regiao-grandesp">
-                        <div class="unidades-lista">
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 6 - MIGUEL ESTEFANO</h4>
-                                    <p><i class="fas fa-map-pin"></i> Miguel Estefano - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 7 - JABAQUARA</h4>
-                                    <p><i class="fas fa-map-pin"></i> Jabaquara - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 9 - CUPECE</h4>
-                                    <p><i class="fas fa-map-pin"></i> Cupecê - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 15 - TABOÃO DA SERRA</h4>
-                                    <p><i class="fas fa-map-pin"></i> Taboão da Serra - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 16 - OURIVES</h4>
-                                    <p><i class="fas fa-map-pin"></i> Ourives - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 17 - MEGA LOJA</h4>
-                                    <p><i class="fas fa-map-pin"></i> Mega Loja - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 21 - DIADEMA CAMPANARIO</h4>
-                                    <p><i class="fas fa-map-pin"></i> Diadema - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 23 - TABOÃO 2</h4>
-                                    <p><i class="fas fa-map-pin"></i> Taboão da Serra - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 24 - RAPOSO</h4>
-                                    <p><i class="fas fa-map-pin"></i> Raposo - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 25 - SÃO BERNARDO</h4>
-                                    <p><i class="fas fa-map-pin"></i> São Bernardo - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 26 - PIRACICABA</h4>
-                                    <p><i class="fas fa-map-pin"></i> Piracicaba - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 28 - OSASCO</h4>
-                                    <p><i class="fas fa-map-pin"></i> Osasco - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 29 - OSASCO</h4>
-                                    <p><i class="fas fa-map-pin"></i> Osasco - SP</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                            
-                            <div class="unidade-card-modal">
-                                <div class="unidade-icon-modal">
-                                    <i class="fas fa-store"></i>
-                                </div>
-                                <div class="unidade-info-modal">
-                                    <h4>LOJA 39 - ITAPECERICA DA SERRA</h4>
-                                    <p><i class="fas fa-map-pin"></i> R. Vítor Manzini, 144</p>
-                                    <span class="unidade-status">Aberto agora</span>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+
+                <!-- GRANDE SP -->
+                <div class="regiao-panel" id="regiao-grandesp" role="tabpanel">
+                    <div class="unidades-lista">
+                        <div class="unidade-card-modal"><div class="unidade-num">06</div><div class="unidade-info"><h4>LOJA 6 — MIGUEL ESTEFANO</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Miguel Estefano — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">07</div><div class="unidade-info"><h4>LOJA 7 — JABAQUARA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Jabaquara — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">09</div><div class="unidade-info"><h4>LOJA 9 — CUPECÊ</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Cupecê — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">15</div><div class="unidade-info"><h4>LOJA 15 — TABOÃO DA SERRA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Taboão da Serra — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">16</div><div class="unidade-info"><h4>LOJA 16 — OURIVES</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Ourives — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">17</div><div class="unidade-info"><h4>LOJA 17 — MEGA LOJA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Mega Loja — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">21</div><div class="unidade-info"><h4>LOJA 21 — DIADEMA CAMPANÁRIO</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Diadema — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">23</div><div class="unidade-info"><h4>LOJA 23 — TABOÃO 2</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Taboão da Serra — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">25</div><div class="unidade-info"><h4>LOJA 25 — SÃO BERNARDO</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> São Bernardo — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">26</div><div class="unidade-info"><h4>LOJA 26 — PIRACICABA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Piracicaba — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">28</div><div class="unidade-info"><h4>LOJA 28 — OSASCO</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Osasco — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">39</div><div class="unidade-info"><h4>LOJA 39 — ITAPECERICA DA SERRA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> R. Vítor Manzini, 144</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
                     </div>
                 </div>
             </div>
@@ -1051,154 +794,239 @@
     <!-- DELIVERY -->
     <section id="delivery" class="delivery">
         <div class="container">
-            <div class="delivery-wrapper" data-aos="fade-up">
-                <div class="delivery-content">
-                    <span class="section-subtitle">Peça online</span>
-                    <h2 class="delivery-title">Receba seu <span class="text-gradient">Chico Grill</span> onde estiver</h2>
-                    <p class="delivery-text">Faça seu pedido pelos nossos canais oficiais e receba em casa com todo sabor e qualidade.</p>
-                    
+            <div class="delivery-grid">
+                <div class="delivery-content" data-aos="fade-right" data-aos-duration="1000">
+                    <span class="section-tag">Peça Online</span>
+                    <h2 class="section-title">
+                        Receba seu<br>
+                        <em class="text-gradient">Chico Grill</em><br>
+                        onde estiver
+                    </h2>
+                    <p class="delivery-text">Faça seu pedido pelos nossos canais oficiais e receba em casa com todo o sabor e qualidade da Chico Grill.</p>
+
                     <div class="delivery-options">
-                        <a href="https://linktr.ee/Chicogrill__01" target="_blank" class="delivery-option">
-                            <i class="fas fa-motorcycle"></i>
-                            <span>iFood</span>
+                        <a href="https://linktr.ee/Chicogrill__01" target="_blank" rel="noopener noreferrer" class="delivery-option" aria-label="Pedir pelo iFood - Chico Grill">
+                            <div class="delivery-option-icon ifood" aria-hidden="true"><i class="fas fa-motorcycle"></i></div>
+                            <div class="delivery-option-text">
+                                <span class="option-label">Peça pelo</span>
+                                <span class="option-name">iFood</span>
+                            </div>
+                            <i class="fas fa-arrow-right delivery-arrow" aria-hidden="true"></i>
                         </a>
-                        <a href="https://api.whatsapp.com/send/?phone=5511915925731&text=Ol%C3%A1+&type=phone_number&app_absent=0" target="_blank" class="delivery-option">
-                            <i class="fab fa-whatsapp"></i>
-                            <span>WhatsApp</span>
+                        <a href="https://api.whatsapp.com/send/?phone=5511915925731&text=Olá&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="delivery-option" aria-label="Pedir pelo WhatsApp - Chico Grill">
+                            <div class="delivery-option-icon whatsapp" aria-hidden="true"><i class="fab fa-whatsapp"></i></div>
+                            <div class="delivery-option-text">
+                                <span class="option-label">Peça pelo</span>
+                                <span class="option-name">WhatsApp</span>
+                            </div>
+                            <i class="fas fa-arrow-right delivery-arrow" aria-hidden="true"></i>
                         </a>
-                        <a href="https://linktree-chicogrill.vercel.app/" target="_blank" class="delivery-option">
-                            <i class="fas fa-link"></i>
-                            <span>Linktree</span>
+                        <a href="https://linktree-chicogrill.vercel.app/" target="_blank" rel="noopener noreferrer" class="delivery-option" aria-label="Ver todas as opções de pedido - Chico Grill">
+                            <div class="delivery-option-icon linktree" aria-hidden="true"><i class="fas fa-link"></i></div>
+                            <div class="delivery-option-text">
+                                <span class="option-label">Veja todas as</span>
+                                <span class="option-name">Opções</span>
+                            </div>
+                            <i class="fas fa-arrow-right delivery-arrow" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
-                
-                <div class="delivery-image">
-                    <img src="images/a.jpg" alt="Delivery Chico Grill">
+
+                <div class="delivery-image-wrap" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="delivery-img-frame">
+                        <img src="images/a.jpg" alt="Delivery Chico Grill - Hambúrguer artesanal entregue na sua casa em São Paulo" width="600" height="480" loading="lazy">
+                        <div class="delivery-img-badge">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                            <span>Seg–Dom<br>18h–23h</span>
+                        </div>
+                    </div>
+                    <div class="delivery-deco-ring" aria-hidden="true"></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- INSTAGRAM FEED -->
-    <section class="instagram-feed">
+    <section class="instagram" aria-label="Feed do Instagram Chico Grill">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle center">Siga-nos</span>
-                <h2 class="section-title center">@chicogrill_01 no <span class="text-gradient">Instagram</span></h2>
+                <span class="section-tag center">Siga-nos</span>
+                <h2 class="section-title center">@chicogrill_01 no <em class="text-gradient">Instagram</em></h2>
             </div>
-            
-            <div class="insta-grid">
-                <div class="insta-item" data-aos="zoom-in">
-                    <img src="images/x.jpg" alt="Instagram post">
-                    <a href="https://instagram.com/chicogrill_01" target="_blank" class="insta-overlay">
-                        <i class="fab fa-instagram"></i>
-                    </a>
+            <div class="insta-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="insta-item"><img src="images/x.jpg" alt="Post Instagram Chico Grill" loading="lazy"><a href="https://instagram.com/chicogrill_01" target="_blank" rel="noopener noreferrer" class="insta-overlay" aria-label="Ver no Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></div>
+                <div class="insta-item"><img src="images/y.jpg" alt="Post Instagram Chico Grill" loading="lazy"><a href="https://instagram.com/chicogrill_01" target="_blank" rel="noopener noreferrer" class="insta-overlay" aria-label="Ver no Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></div>
+                <div class="insta-item"><img src="images/z.jpg" alt="Post Instagram Chico Grill" loading="lazy"><a href="https://instagram.com/chicogrill_01" target="_blank" rel="noopener noreferrer" class="insta-overlay" aria-label="Ver no Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></div>
+                <div class="insta-item"><img src="images/pao.jpg" alt="Pão de Alho Chico Grill - Post Instagram" loading="lazy"><a href="https://instagram.com/chicogrill_01" target="_blank" rel="noopener noreferrer" class="insta-overlay" aria-label="Ver no Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></div>
+                <div class="insta-item"><img src="images/toguro.jpg" alt="Big Toguro Hambúrguer Triplo Chico Grill - Post Instagram" loading="lazy"><a href="https://instagram.com/chicogrill_01" target="_blank" rel="noopener noreferrer" class="insta-overlay" aria-label="Ver no Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></div>
+                <div class="insta-item"><img src="images/jojo.jpg" alt="Big Jojo Hambúrguer Duplo Chico Grill - Post Instagram" loading="lazy"><a href="https://instagram.com/chicogrill_01" target="_blank" rel="noopener noreferrer" class="insta-overlay" aria-label="Ver no Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></div>
+            </div>
+            <div class="insta-cta" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://instagram.com/chicogrill_01" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-large">
+                    <i class="fab fa-instagram" aria-hidden="true"></i> Seguir @chicogrill_01
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION - SEO -->
+    <section id="faq" class="faq-section" aria-labelledby="faqTitle">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag center">Dúvidas Frequentes</span>
+                <h2 class="section-title center" id="faqTitle">Perguntas <em class="text-gradient">Frequentes</em></h2>
+            </div>
+            <div class="faq-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Qual o horário de funcionamento da Chico Grill?</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>A Chico Grill funciona de <strong>segunda a domingo, das 18h às 23h</strong>. Todas as nossas unidades seguem o mesmo horário.</p>
+                    </div>
                 </div>
-                <div class="insta-item" data-aos="zoom-in" data-aos-delay="100">
-                    <img src="images/y.jpg" alt="Instagram post">
-                    <a href="https://instagram.com/chicogrill_01" target="_blank" class="insta-overlay">
-                        <i class="fab fa-instagram"></i>
-                    </a>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Como pedir delivery na Chico Grill?</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Você pode pedir pelo <strong>iFood</strong>, pelo <strong>WhatsApp (11) 91592-5731</strong>, ou acessar todas as opções de delivery em nosso Linktree.</p>
+                    </div>
                 </div>
-                <div class="insta-item" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="images/z.jpg" alt="Instagram post">
-                    <a href="https://instagram.com/chicogrill_01" target="_blank" class="insta-overlay">
-                        <i class="fab fa-instagram"></i>
-                    </a>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Quantas unidades a Chico Grill tem em São Paulo?</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Temos <strong>mais de 40 unidades</strong> espalhadas por toda São Paulo e Grande SP, incluindo Zona Sul, Zona Oeste, Zona Norte/Leste, Diadema, Taboão da Serra, Osasco, São Bernardo e mais.</p>
+                    </div>
                 </div>
-                <div class="insta-item" data-aos="zoom-in" data-aos-delay="300">
-                    <img src="images/pao.jpg" alt="Instagram post">
-                    <a href="https://instagram.com/chicogrill_01" target="_blank" class="insta-overlay">
-                        <i class="fab fa-instagram"></i>
-                    </a>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Qual o hambúrguer mais pedido da Chico Grill?</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O <strong>Big Najla</strong> é o nosso campeão de pedidos: burger artesanal de costela 180g, cheddar cremoso, vinagrete, barbecue e molho especial — tudo por apenas R$ 17,00!</p>
+                    </div>
                 </div>
-                <div class="insta-item" data-aos="zoom-in" data-aos-delay="400">
-                    <img src="images/toguro.jpg" alt="Instagram post">
-                    <a href="https://instagram.com/chicogrill_01" target="_blank" class="insta-overlay">
-                        <i class="fab fa-instagram"></i>
-                    </a>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>A Chico Grill tem espetos além de hambúrgueres?</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Somos famosos pelos nossos espetos artesanais: carne bovina, frango, kafta, coração, tulipa, panceta, queijo coalho, linguiça toscana e muito mais. Tudo feito na brasa!</p>
+                    </div>
                 </div>
-                <div class="insta-item" data-aos="zoom-in" data-aos-delay="500">
-                    <img src="images/jojo.jpg" alt="Instagram post">
-                    <a href="https://instagram.com/chicogrill_01" target="_blank" class="insta-overlay">
-                        <i class="fab fa-instagram"></i>
-                    </a>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>A Chico Grill aceita PIX e cartão?</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Aceitamos <strong>dinheiro, cartão de crédito/débito e PIX</strong> em todas as nossas unidades.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA FINAL -->
-    <section class="cta-final">
+    <section class="cta-final" aria-label="Chamada para ação - Peça seu Chico Grill">
+        <div class="cta-bg" aria-hidden="true"></div>
         <div class="container">
             <div class="cta-content" data-aos="zoom-in">
-                <h2 class="cta-title">Pronto para provar o verdadeiro sabor do <span class="text-gradient">Chico Grill</span>?</h2>
+                <span class="section-tag center">Não perca tempo</span>
+                <h2 class="cta-title">
+                    Pronto para provar<br>o verdadeiro sabor do<br>
+                    <em class="text-gradient">Chico Grill?</em>
+                </h2>
                 <div class="cta-buttons">
-                    <a href="#cardapio" class="btn btn-primary btn-large"><i class="fas fa-utensils"></i> Ver Cardápio</a>
-                    <a href="#delivery" class="btn btn-secondary btn-large"><i class="fas fa-motorcycle"></i> Pedir Agora</a>
-                    <a href="https://instagram.com/chicogrill_01" target="_blank" class="btn btn-outline btn-large"><i class="fab fa-instagram"></i> Seguir</a>
+                    <a href="#cardapio" class="btn btn-primary btn-large">
+                        <i class="fas fa-utensils" aria-hidden="true"></i> Ver Cardápio
+                    </a>
+                    <a href="#delivery" class="btn btn-secondary btn-large">
+                        <i class="fas fa-motorcycle" aria-hidden="true"></i> Pedir Agora
+                    </a>
+                    <a href="https://instagram.com/chicogrill_01" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-large">
+                        <i class="fab fa-instagram" aria-hidden="true"></i> Seguir
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-info">
-                    <div class="footer-logo">
-                        <span class="logo-text">CHICO<span class="logo-accent">GRILL</span></span>
-                    </div>
-                    <p>Espetos e burgers artesanais com o verdadeiro sabor do churrasco. Mais de 40 unidades em São Paulo e região.</p>
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo" aria-label="Chico Grill - Voltar ao início">
+                        <span class="logo-text footer-logo">CHICO<span class="logo-accent">GRILL</span></span>
+                    </a>
+                    <p>Espetos e burgers artesanais com o verdadeiro sabor do churrasco. Mais de 40 unidades em São Paulo.</p>
                     <div class="footer-social">
-                        <a href="https://instagram.com/chicogrill_01" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://instagram.com/chicogrill_01" target="_blank" rel="noopener noreferrer" aria-label="Instagram Chico Grill"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook Chico Grill"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="TikTok Chico Grill"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=5511915925731" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Chico Grill"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                     </div>
                 </div>
-                
-                <div class="footer-links">
-                    <h4>Navegação</h4>
+
+                <div class="footer-nav">
+                    <h3>Navegação</h3>
                     <ul>
-                        <li><a href="#sobre">Sobre nós</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
                         <li><a href="#cardapio">Cardápio</a></li>
                         <li><a href="#unidades">Unidades</a></li>
                         <li><a href="#delivery">Delivery</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                     </ul>
                 </div>
-                
-                <div class="footer-links">
-                    <h4>Horário</h4>
+
+                <div class="footer-hours">
+                    <h3>Horário</h3>
                     <ul>
-                        <li><i class="fas fa-clock"></i> Segunda a Domingo</li>
-                        <li>18:00 às 23:00</li>
+                        <li><i class="fas fa-clock" aria-hidden="true"></i> Segunda a Domingo</li>
+                        <li><i class="fas fa-sun" aria-hidden="true"></i> 18:00 às 23:00</li>
                     </ul>
+                    <div class="footer-contact">
+                        <h3>Contato</h3>
+                        <a href="https://api.whatsapp.com/send/?phone=5511915925731" target="_blank" rel="noopener noreferrer" class="footer-whatsapp">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            (11) 91592-5731
+                        </a>
+                    </div>
                 </div>
-                
+
                 <div class="footer-newsletter">
-                    <h4>Fique por dentro</h4>
-                    <p>Receba novidades e promoções</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Seu e-mail">
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    <h3>Fique por dentro</h3>
+                    <p>Novidades e promoções no seu e-mail</p>
+                    <form class="newsletter-form" id="newsletterForm" novalidate>
+                        <label for="newsletterEmail" class="sr-only">Seu e-mail</label>
+                        <input type="email" id="newsletterEmail" placeholder="Seu e-mail" required autocomplete="email">
+                        <button type="submit" aria-label="Assinar newsletter">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                        </button>
                     </form>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2025 Chico Grill. Todos os direitos reservados.</p>
-                <p>@chicogrill_01 <i class="fas fa-heart" style="color: #f97316;"></i> 40+ unidades</p>
+                <p>@chicogrill_01 &nbsp;<i class="fas fa-heart" style="color: var(--laranja)" aria-hidden="true"></i>&nbsp; 40+ unidades em SP</p>
             </div>
         </div>
     </footer>
 
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Script principal -->
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

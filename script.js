@@ -4,6 +4,14 @@
 
 'use strict';
 
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
+window.addEventListener('beforeunload', () => {
+    window.scrollTo(0, 0);
+});
+
 // ── PAGE LOADER ─────────────────────────────────────────────
 window.addEventListener('load', () => {
     const loader = document.getElementById('loader');
@@ -203,65 +211,90 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 })();
 
 // ── SWIPER CARROSSÉIS ────────────────────────────────────────
-// FIX: desabilitado loop quando slides < slidesPerView * 2
+function getSlidesPerViewForWidth(config) {
+    let slidesPerView = config.slidesPerView || 1;
+    if (config.breakpoints) {
+        const breakpoints = Object.keys(config.breakpoints)
+            .map(key => Number(key))
+            .filter(value => !Number.isNaN(value))
+            .sort((a, b) => a - b);
+
+        breakpoints.forEach(bp => {
+            if (window.innerWidth >= bp) {
+                const bpConfig = config.breakpoints[bp];
+                if (bpConfig && bpConfig.slidesPerView != null) {
+                    slidesPerView = bpConfig.slidesPerView;
+                }
+            }
+        });
+    }
+    return Number(slidesPerView) || 1;
+}
+
+function initSafeSwiper(selector, config) {
+    const container = document.querySelector(selector);
+    if (!container) return null;
+    const slides = container.querySelectorAll('.swiper-slide').length;
+    const slidesPerView = getSlidesPerViewForWidth(config);
+
+    if (config.loop && slides < slidesPerView * 2) {
+        config.loop = false;
+        config.loopedSlides = 0;
+    }
+
+    return new Swiper(selector, config);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-
-    // Espetos — 11 slides, loop seguro
-    if (document.querySelector('.espetos-swiper')) {
-        new Swiper('.espetos-swiper', {
-            slidesPerView: 1,
-            spaceBetween: 12,
-            loop: true,
-            grabCursor: true,
-            autoplay: {
-                delay: 3200,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true,
-            },
-            pagination: { el: '.espetos-swiper .swiper-pagination', clickable: true, dynamicBullets: true },
-            navigation: {
-                nextEl: '.espetos-swiper .swiper-button-next',
-                prevEl: '.espetos-swiper .swiper-button-prev',
-            },
-            breakpoints: {
-                480:  { slidesPerView: 2, spaceBetween: 12 },
-                768:  { slidesPerView: 3, spaceBetween: 16 },
-                1024: { slidesPerView: 4, spaceBetween: 20 },
-                // loop só é safe quando totalSlides (11) >= slidesPerView * 2
-            },
-            a11y: { prevSlideMessage: 'Slide anterior', nextSlideMessage: 'Próximo slide' },
-        });
+    if (!window.location.hash) {
+        window.scrollTo({ top: 0, left: 0 });
     }
 
-    // Burgers — 7 slides
-    // Com 1 por vez: loop OK. Com 3: 7 >= 3*2=6 OK. Com 2: 7 >= 4 OK.
-    if (document.querySelector('.burgers-swiper')) {
-        new Swiper('.burgers-swiper', {
-            slidesPerView: 1,
-            spaceBetween: 12,
-            loop: true,
-            grabCursor: true,
-            autoplay: {
-                delay: 3800,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true,
-            },
-            pagination: { el: '.burgers-swiper .swiper-pagination', clickable: true, dynamicBullets: true },
-            navigation: {
-                nextEl: '.burgers-swiper .swiper-button-next',
-                prevEl: '.burgers-swiper .swiper-button-prev',
-            },
-            breakpoints: {
-                640:  { slidesPerView: 2, spaceBetween: 16 },
-                // Limitado a 2 no máximo para garantir loop (7 slides >= 2*2=4)
-                // Não colocamos 3 porque 7 < 3*2=6 NÃO é verdade, mas para segurança extra mantemos 2
-                1024: { slidesPerView: 2, spaceBetween: 20 },
-                1200: { slidesPerView: 3, spaceBetween: 24 },
-            },
-            a11y: { prevSlideMessage: 'Hambúrguer anterior', nextSlideMessage: 'Próximo hambúrguer' },
-        });
-    }
+    initSafeSwiper('.espetos-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 12,
+        loop: true,
+        grabCursor: true,
+        autoplay: {
+            delay: 3200,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+        pagination: { el: '.espetos-swiper .swiper-pagination', clickable: true, dynamicBullets: true },
+        navigation: {
+            nextEl: '.espetos-swiper .swiper-button-next',
+            prevEl: '.espetos-swiper .swiper-button-prev',
+        },
+        breakpoints: {
+            480:  { slidesPerView: 2, spaceBetween: 12 },
+            768:  { slidesPerView: 3, spaceBetween: 16 },
+            1024: { slidesPerView: 3, spaceBetween: 20 },
+        },
+        a11y: { prevSlideMessage: 'Slide anterior', nextSlideMessage: 'Próximo slide' },
+    });
 
+    initSafeSwiper('.burgers-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 12,
+        loop: true,
+        grabCursor: true,
+        autoplay: {
+            delay: 3800,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+        pagination: { el: '.burgers-swiper .swiper-pagination', clickable: true, dynamicBullets: true },
+        navigation: {
+            nextEl: '.burgers-swiper .swiper-button-next',
+            prevEl: '.burgers-swiper .swiper-button-prev',
+        },
+        breakpoints: {
+            640:  { slidesPerView: 2, spaceBetween: 16 },
+            1024: { slidesPerView: 2, spaceBetween: 20 },
+            1200: { slidesPerView: 3, spaceBetween: 24 },
+        },
+        a11y: { prevSlideMessage: 'Hambúrguer anterior', nextSlideMessage: 'Próximo hambúrguer' },
+    });
 });
 
 // ── CONTADOR ANIMADO ─────────────────────────────────────────

@@ -10,6 +10,12 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="theme-color" content="#f97316">
     <link rel="canonical" href="https://www.chicogrill.com.br">
+    <link rel="shortcut icon" href="image.png" type="image/png">
+    <link rel="icon" href="image.png" type="image/png">
+    <link rel="apple-touch-icon" href="image.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="msapplication-TileColor" content="#f97316">
+    <meta name="msapplication-TileImage" content="image.png">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="restaurant">
@@ -52,7 +58,7 @@
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
         "opens": "18:00",
-        "closes": "23:00"
+        "closes": "03:00"
       },
       "address": {
         "@type": "PostalAddress",
@@ -66,7 +72,7 @@
         "https://linktr.ee/Chicogrill__01"
       ],
       "numberOfEmployees": { "@type": "QuantitativeValue", "minValue": 40 },
-      "foundingDate": "2018"
+      "foundingDate": "2000"
     }
     </script>
 
@@ -107,7 +113,7 @@
         {
           "@type": "Question",
           "name": "Qual o hambúrguer mais pedido da Chico Grill?",
-          "acceptedAnswer": { "@type": "Answer", "text": "O Big Najla é o mais pedido: burger artesanal de costela 180g, cheddar cremoso, vinagrete, barbecue e molho especial por R$17." }
+          "acceptedAnswer": { "@type": "Answer", "text": "O Big Jojo é o mais pedido: hambúrguer duplo com cheddar cremoso, carne suculenta e muito sabor." }
         }
       ]
     }
@@ -180,7 +186,7 @@
             <div class="hero-text">
                 <div class="hero-badge" data-aos="fade-down" data-aos-duration="800">
                     <span class="badge-dot" aria-hidden="true"></span>
-                    Desde 2018 &nbsp;·&nbsp; 40+ Unidades em São Paulo
+                    Desde 2000 &nbsp;·&nbsp; 40+ Unidades em São Paulo
                 </div>
                 <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                     O <em>cheddar</em><br>mais insano<br>de São Paulo
@@ -253,6 +259,112 @@
         </div>
     </div>
 
+    <!-- UNIDADES -->
+    <section id="unidades" class="unidades">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag center">Onde Estamos</span>
+                <h2 class="section-title center">Mais de <em class="text-gradient">40 unidades</em><br>em São Paulo</h2>
+                <p class="section-description">Encontre a unidade mais próxima de você</p>
+            </div>
+            <div class="unidades-cta" data-aos="fade-up" data-aos-delay="100">
+                <button id="openModalBtn" class="btn btn-primary btn-large" aria-haspopup="dialog">
+                    <i class="fas fa-map-location-dot" aria-hidden="true"></i>
+                    Ver Todas as Unidades
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL DE UNIDADES -->
+    <div id="unidadesModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h2 id="modalTitle">Nossas <em class="text-gradient">Unidades</em></h2>
+                    <p>40+ lojas espalhadas por São Paulo e Grande SP</p>
+                </div>
+                <button class="modal-close" id="modalClose" aria-label="Fechar modal de unidades">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="regioes-tabs" role="tablist" aria-label="Regiões de São Paulo">
+                    <button class="tab-btn active" data-regiao="sul" role="tab" aria-selected="true">
+                        <i class="fas fa-map-pin" aria-hidden="true"></i> Zona Sul
+                    </button>
+                    <button class="tab-btn" data-regiao="oeste" role="tab" aria-selected="false">
+                        <i class="fas fa-map-pin" aria-hidden="true"></i> Zona Oeste
+                    </button>
+                    <button class="tab-btn" data-regiao="norte" role="tab" aria-selected="false">
+                        <i class="fas fa-map-pin" aria-hidden="true"></i> Zona Norte/Leste
+                    </button>
+                    <button class="tab-btn" data-regiao="grandesp" role="tab" aria-selected="false">
+                        <i class="fas fa-map-pin" aria-hidden="true"></i> Grande SP
+                    </button>
+                </div>
+
+                <!-- ZONA SUL -->
+                <div class="regiao-panel active" id="regiao-sul" role="tabpanel">
+                    <div class="unidades-lista">
+                        <div class="unidade-card-modal"><div class="unidade-num">01</div><div class="unidade-info"><h4>Chico Grill Moema</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Alameda dos Pamaris, 302</p><span class="status-open">20h às 2h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">02</div><div class="unidade-info"><h4>Chico Grill Vila Olímpia</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Rua Gomes de Carvalho, 1726</p><span class="status-open">Segunda à sábado • 18h às 2h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">03</div><div class="unidade-info"><h4>Chico Grill Faria Lima</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Brigadeiro Faria Lima, 3001</p><span class="status-open">Todos os dias • 10h às 3h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">04</div><div class="unidade-info"><h4>Chico Grill Atlântica</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Atlântica, 2699</p><span class="status-open">20h às 2h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">05</div><div class="unidade-info"><h4>Chico Grill Parque das Árvores</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. do Arvoreiro, 35</p><span class="status-open">18h às 2h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">06</div><div class="unidade-info"><h4>Chico Grill Miguel Estefano</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Miguel Estefano, 1930</p><span class="status-open">20h às 2h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">07</div><div class="unidade-info"><h4>Chico Grill Jabaquara</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Eng. Armando de Arruda Pereira, 3204</p><span class="status-open">Terça à sábado • 18h às 00h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">08</div><div class="unidade-info"><h4>Chico Grill Jardim Mirna</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Antônio Carlos Benjamin dos Santos, 3168</p><span class="status-open">20h30 às 2h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">09</div><div class="unidade-info"><h4>Chico Grill Cupecê</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Santa Fonso, 44</p><span class="status-open">Segunda à sábado • 20h às 2h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">10</div><div class="unidade-info"><h4>Chico Grill Capão</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Comendador Sant'Anna, 1099</p><span class="status-open">Terça à domingo</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">11</div><div class="unidade-info"><h4>Chico Grill Abrão de Moraes</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Rua Don Antônio Galvão, 340</p><span class="status-open">Segunda à sábado • 20h às 2h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">12</div><div class="unidade-info"><h4>Chico Grill Heliópolis</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Estrada das Lágrimas, 2100</p><span class="status-open">Segunda à sábado • 20h às 2h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">13</div><div class="unidade-info"><h4>Chico Grill Pinheiros</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Rua Butantã, 268</p><span class="status-open">Segunda à sábado • 20h30 às 2h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">14</div><div class="unidade-info"><h4>Chico Grill Jardim Primavera</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Praça João Beiçola</p><span class="status-open">18h30 às 2h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">15</div><div class="unidade-info"><h4>Chico Grill Jardim Eliana</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Dona Belmira Marin, 6004</p><span class="status-open">20h às 2h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">16</div><div class="unidade-info"><h4>Chico Grill Jardim São Luís</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Rua Nova Tuparoqueira, 530</p><span class="status-open">Terça à domingo • 18h às 1h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">17</div><div class="unidade-info"><h4>Chico Grill Sabará</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Nossa Senhora do Sabará, 4374</p><span class="status-open">19h às 1h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">18</div><div class="unidade-info"><h4>Chico Grill SP Market</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Octalles Marcondes Ferreira</p><span class="status-open">Horário sob consulta</span></div></div>
+                    </div>
+                </div>
+
+                <!-- ZONA OESTE -->
+                <div class="regiao-panel" id="regiao-oeste" role="tabpanel">
+                    <div class="unidades-lista">
+                        <div class="unidade-card-modal"><div class="unidade-num">01</div><div class="unidade-info"><h4>Chico Grill Jaguaré</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Praça Professor Luis Gonzaga, 10</p><span class="status-open">20h às 2h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">02</div><div class="unidade-info"><h4>Chico Grill Raposo</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Rua Bernardo dos Santos, 14</p><span class="status-open">Todos os dias • 20h às 2h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">03</div><div class="unidade-info"><h4>Chico Grill Osasco</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Rua Cônego Afonso, Osasco</p><span class="status-open">20h às 2h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">04</div><div class="unidade-info"><h4>Chico Grill Taboão da Serra</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Estr. Kizaemon Takeuti, 2425</p><span class="status-open">18h30 às 2h</span></div></div>
+                    </div>
+                </div>
+
+                <!-- ZONA NORTE / LESTE -->
+                <div class="regiao-panel" id="regiao-norte" role="tabpanel">
+                    <div class="unidades-lista">
+                        <div class="unidade-card-modal"><div class="unidade-num">01</div><div class="unidade-info"><h4>Chico Grill Anacê</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Anacê</p><span class="status-open">19h às 2h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">02</div><div class="unidade-info"><h4>Chico Grill Vila Formosa</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Praça Sampaio Vidal</p><span class="status-open">16h30 às 2h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">03</div><div class="unidade-info"><h4>Chico Grill Vila Nhocuné</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Aldeia Manuel Antônio, 55</p><span class="status-open">Horário sob consulta</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">04</div><div class="unidade-info"><h4>Chico Grill Grimaldi</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Sapopemba, 8756</p><span class="status-open">20h às 2h</span></div></div>
+                    </div>
+                </div>
+
+                <!-- GRANDE SP -->
+                <div class="regiao-panel" id="regiao-grandesp" role="tabpanel">
+                    <div class="unidades-lista">
+                        <div class="unidade-card-modal"><div class="unidade-num">01</div><div class="unidade-info"><h4>Chico Grill Casa Verde</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Engenheiro Caetano Álvares, 2220</p><span class="status-open">Horário sob consulta</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">02</div><div class="unidade-info"><h4>Chico Grill Diadema Campanário</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Brasília, 398</p><span class="status-open">Quarta à segunda • 20h às 00h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">03</div><div class="unidade-info"><h4>Chico Grill São Bernardo</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Marechal Deodoro, 2690</p><span class="status-open">Não abre domingo</span></p></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">04</div><div class="unidade-info"><h4>Chico Grill Santo Eduardo</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Padre Nelson José Nigris</p><span class="status-open">18h30 às 2h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">05</div><div class="unidade-info"><h4>Chico Grill Itape</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Victor Manzini</p><span class="status-open">19h às 00h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">06</div><div class="unidade-info"><h4>Chico Grill Araribá</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Silvio Ribeiro de Aragão, 354</p><span class="status-open">20h às 2h</span></div></div>
+                        <div class="unidade-card-modal"><div class="unidade-num">07</div><div class="unidade-info"><h4>Chico Grill Mega Loja</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Atlântica, 4393</p><span class="status-open">Horário sob consulta</span></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- SOBRE -->
     <section id="sobre" class="sobre">
         <div class="container">
@@ -262,7 +374,7 @@
                         <div class="mosaic-main">
                             <img src="images/c.jpg" alt="Hambúrguer artesanal Chico Grill com cheddar cremoso" width="600" height="400" loading="lazy">
                             <div class="mosaic-badge">
-                                <span class="badge-year">2018</span>
+                                <span class="badge-year">2000</span>
                                 <span class="badge-text">Fundação</span>
                             </div>
                         </div>
@@ -677,121 +789,6 @@
         </div>
     </section>
 
-    <!-- UNIDADES -->
-    <section id="unidades" class="unidades">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag center">Onde Estamos</span>
-                <h2 class="section-title center">Mais de <em class="text-gradient">40 unidades</em><br>em São Paulo</h2>
-                <p class="section-description">Encontre a unidade mais próxima de você</p>
-            </div>
-            <div class="unidades-cta" data-aos="fade-up" data-aos-delay="100">
-                <button id="openModalBtn" class="btn btn-primary btn-large" aria-haspopup="dialog">
-                    <i class="fas fa-map-location-dot" aria-hidden="true"></i>
-                    Ver Todas as Unidades
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- MODAL DE UNIDADES -->
-    <div id="unidadesModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-        <div class="modal-backdrop"></div>
-        <div class="modal-content">
-            <div class="modal-header">
-                <div>
-                    <h2 id="modalTitle">Nossas <em class="text-gradient">Unidades</em></h2>
-                    <p>40+ lojas espalhadas por São Paulo e Grande SP</p>
-                </div>
-                <button class="modal-close" id="modalClose" aria-label="Fechar modal de unidades">
-                    <i class="fas fa-times" aria-hidden="true"></i>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="regioes-tabs" role="tablist" aria-label="Regiões de São Paulo">
-                    <button class="tab-btn active" data-regiao="sul" role="tab" aria-selected="true">
-                        <i class="fas fa-map-pin" aria-hidden="true"></i> Zona Sul
-                    </button>
-                    <button class="tab-btn" data-regiao="oeste" role="tab" aria-selected="false">
-                        <i class="fas fa-map-pin" aria-hidden="true"></i> Zona Oeste
-                    </button>
-                    <button class="tab-btn" data-regiao="norte" role="tab" aria-selected="false">
-                        <i class="fas fa-map-pin" aria-hidden="true"></i> Zona Norte/Leste
-                    </button>
-                    <button class="tab-btn" data-regiao="grandesp" role="tab" aria-selected="false">
-                        <i class="fas fa-map-pin" aria-hidden="true"></i> Grande SP
-                    </button>
-                </div>
-
-                <!-- ZONA SUL -->
-                <div class="regiao-panel active" id="regiao-sul" role="tabpanel">
-                    <div class="unidades-lista">
-                        <div class="unidade-card-modal"><div class="unidade-num">01</div><div class="unidade-info"><h4>LOJA 1 — MOEMA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Praça Nicolau Aranha Pachêco, 112 — Jardim Tres Marias</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">04</div><div class="unidade-info"><h4>LOJA 4 — AV ATLÂNTICA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Praça Nicolau Aranha Pachêco, 112 — Jardim Tres Marias</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">08</div><div class="unidade-info"><h4>LOJA 8 — JARDIM MIRNA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Antonio Carlos Benjamin dos Santos, 3168</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">10</div><div class="unidade-info"><h4>LOJA 10 — CAPÃO</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Comendador Sant'Anna, 1099 — Capão Redondo</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">11</div><div class="unidade-info"><h4>LOJA 11 — VILA DA SAÚDE</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Prof. Abraão de Morais, 1313</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">20</div><div class="unidade-info"><h4>LOJA 20 — JURUBATUBA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Jurubatuba — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">22</div><div class="unidade-info"><h4>LOJA 22 — JARDIM ELIANA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Dona Belmira Marin, 6004</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">32</div><div class="unidade-info"><h4>LOJA 32 — M'BOI MIRIM</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> M'Boi Mirim — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">35</div><div class="unidade-info"><h4>LOJA 35 — JARDIM SÃO LUÍS</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Jardim São Luís — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">36</div><div class="unidade-info"><h4>LOJA 36 — ALVARENGA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Alvarenga — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">38</div><div class="unidade-info"><h4>LOJA 38 — SANTO EDUARDO</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Santo Eduardo — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">40</div><div class="unidade-info"><h4>LOJA 40 — VILA NHOCUNE</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Av. Aldeia Manuel Antônio, 45</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                    </div>
-                </div>
-
-                <!-- ZONA OESTE -->
-                <div class="regiao-panel" id="regiao-oeste" role="tabpanel">
-                    <div class="unidades-lista">
-                        <div class="unidade-card-modal"><div class="unidade-num">02</div><div class="unidade-info"><h4>LOJA 2 — VILA OLÍMPIA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Vila Olímpia — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">03</div><div class="unidade-info"><h4>LOJA 3 — FARIA LIMA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Faria Lima — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">05</div><div class="unidade-info"><h4>LOJA 5 — PARQUE DAS ÁRVORES</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Parque das Árvores — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">14</div><div class="unidade-info"><h4>LOJA 14 — PINHEIROS</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Pinheiros — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">18</div><div class="unidade-info"><h4>LOJA 18 — SANTO AMARO</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Santo Amaro — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">19</div><div class="unidade-info"><h4>LOJA 19 — JARDIM PRIMAVERA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Jardim Primavera — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">24</div><div class="unidade-info"><h4>LOJA 24 — RAPOSO</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Raposo — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">29</div><div class="unidade-info"><h4>LOJA 29 — OSASCO</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Osasco — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">30</div><div class="unidade-info"><h4>LOJA 30 — ANACÉ</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Anacé — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">31</div><div class="unidade-info"><h4>LOJA 31 — GRIMALDI</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Grimaldi — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">34</div><div class="unidade-info"><h4>LOJA 34 — ARARIBÁ</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Araribá — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">37</div><div class="unidade-info"><h4>LOJA 37 — SABARÁ</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Sabará — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                    </div>
-                </div>
-
-                <!-- ZONA NORTE / LESTE -->
-                <div class="regiao-panel" id="regiao-norte" role="tabpanel">
-                    <div class="unidades-lista">
-                        <div class="unidade-card-modal"><div class="unidade-num">12</div><div class="unidade-info"><h4>LOJA 12 — JAGUARÉ</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Jaguaré — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">13</div><div class="unidade-info"><h4>LOJA 13 — HELIÓPOLIS</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Heliópolis — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">27</div><div class="unidade-info"><h4>LOJA 27 — CASA VERDE</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Casa Verde — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">33</div><div class="unidade-info"><h4>LOJA 33 — VILA FORMOSA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Vila Formosa — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">38</div><div class="unidade-info"><h4>LOJA 38 — SANTO EDUARDO</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Santo Eduardo — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                    </div>
-                </div>
-
-                <!-- GRANDE SP -->
-                <div class="regiao-panel" id="regiao-grandesp" role="tabpanel">
-                    <div class="unidades-lista">
-                        <div class="unidade-card-modal"><div class="unidade-num">06</div><div class="unidade-info"><h4>LOJA 6 — MIGUEL ESTEFANO</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Miguel Estefano — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">07</div><div class="unidade-info"><h4>LOJA 7 — JABAQUARA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Jabaquara — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">09</div><div class="unidade-info"><h4>LOJA 9 — CUPECÊ</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Cupecê — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">15</div><div class="unidade-info"><h4>LOJA 15 — TABOÃO DA SERRA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Taboão da Serra — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">16</div><div class="unidade-info"><h4>LOJA 16 — OURIVES</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Ourives — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">17</div><div class="unidade-info"><h4>LOJA 17 — MEGA LOJA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Mega Loja — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">21</div><div class="unidade-info"><h4>LOJA 21 — DIADEMA CAMPANÁRIO</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Diadema — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">23</div><div class="unidade-info"><h4>LOJA 23 — TABOÃO 2</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Taboão da Serra — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">25</div><div class="unidade-info"><h4>LOJA 25 — SÃO BERNARDO</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> São Bernardo — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">26</div><div class="unidade-info"><h4>LOJA 26 — PIRACICABA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Piracicaba — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">28</div><div class="unidade-info"><h4>LOJA 28 — OSASCO</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> Osasco — SP</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                        <div class="unidade-card-modal"><div class="unidade-num">39</div><div class="unidade-info"><h4>LOJA 39 — ITAPECERICA DA SERRA</h4><p><i class="fas fa-location-dot" aria-hidden="true"></i> R. Vítor Manzini, 144</p><span class="status-open"><i class="fas fa-circle" aria-hidden="true"></i> Aberto agora</span></div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- DELIVERY -->
     <section id="delivery" class="delivery">
         <div class="container">
             <div class="delivery-grid">
@@ -821,11 +818,11 @@
                             </div>
                             <i class="fas fa-arrow-right delivery-arrow" aria-hidden="true"></i>
                         </a>
-                        <a href="https://linktree-chicogrill.vercel.app/" target="_blank" rel="noopener noreferrer" class="delivery-option" aria-label="Ver todas as opções de pedido - Chico Grill">
+                        <a href="https://chicogrill-moema.com" target="_blank" rel="noopener noreferrer" class="delivery-option" aria-label="Pedir pelo delivery próprio - Chico Grill">
                             <div class="delivery-option-icon linktree" aria-hidden="true"><i class="fas fa-link"></i></div>
                             <div class="delivery-option-text">
-                                <span class="option-label">Veja todas as</span>
-                                <span class="option-name">Opções</span>
+                                <span class="option-label">Delivery</span>
+                                <span class="option-name">chicogrill-moema.com</span>
                             </div>
                             <i class="fas fa-arrow-right delivery-arrow" aria-hidden="true"></i>
                         </a>
@@ -837,7 +834,7 @@
                         <img src="images/a.jpg" alt="Delivery Chico Grill - Hambúrguer artesanal entregue na sua casa em São Paulo" width="600" height="480" loading="lazy">
                         <div class="delivery-img-badge">
                             <i class="fas fa-clock" aria-hidden="true"></i>
-                            <span>Seg–Dom<br>18h–23h</span>
+                            <span>Delivery<br>próprio</span>
                         </div>
                     </div>
                     <div class="delivery-deco-ring" aria-hidden="true"></div>
@@ -883,7 +880,7 @@
                         <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>A Chico Grill funciona de <strong>segunda a domingo, das 18h às 23h</strong>. Todas as nossas unidades seguem o mesmo horário.</p>
+                        <p>Os horários variam por unidade. Confira os horários e endereços atuais na seção <strong>Unidades</strong> acima.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -892,7 +889,7 @@
                         <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>Você pode pedir pelo <strong>iFood</strong>, pelo <strong>WhatsApp (11) 91592-5731</strong>, ou acessar todas as opções de delivery em nosso Linktree.</p>
+                        <p>Você pode pedir pelo <strong>iFood</strong>, pelo <strong>WhatsApp (11) 91592-5731</strong> ou diretamente pelo <strong>delivery próprio</strong> em <a href="https://chicogrill-moema.com" target="_blank" rel="noopener noreferrer">chicogrill-moema.com</a>.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -910,7 +907,7 @@
                         <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>O <strong>Big Najla</strong> é o nosso campeão de pedidos: burger artesanal de costela 180g, cheddar cremoso, vinagrete, barbecue e molho especial — tudo por apenas R$ 17,00!</p>
+                        <p>O <strong>Big Jojo</strong> é o mais pedido: hambúrguer duplo com cheddar cremoso, carne suculenta e muito sabor.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -971,8 +968,8 @@
                     <p>Espetos e burgers artesanais com o verdadeiro sabor do churrasco. Mais de 40 unidades em São Paulo.</p>
                     <div class="footer-social">
                         <a href="https://instagram.com/chicogrill_01" target="_blank" rel="noopener noreferrer" aria-label="Instagram Chico Grill"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook Chico Grill"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="TikTok Chico Grill"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Chico Grill iOS app"><i class="fab fa-apple" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Chico Grill Android app"><i class="fab fa-android" aria-hidden="true"></i></a>
                         <a href="https://api.whatsapp.com/send/?phone=5511915925731" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Chico Grill"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                     </div>
                 </div>
@@ -991,8 +988,8 @@
                 <div class="footer-hours">
                     <h3>Horário</h3>
                     <ul>
-                        <li><i class="fas fa-clock" aria-hidden="true"></i> Segunda a Domingo</li>
-                        <li><i class="fas fa-sun" aria-hidden="true"></i> 18:00 às 23:00</li>
+                        <li><i class="fas fa-clock" aria-hidden="true"></i> Horários variam por unidade</li>
+                        <li><i class="fas fa-sun" aria-hidden="true"></i> Consulte a seção Unidades</li>
                     </ul>
                     <div class="footer-contact">
                         <h3>Contato</h3>
@@ -1018,6 +1015,7 @@
 
             <div class="footer-bottom">
                 <p>&copy; 2025 Chico Grill. Todos os direitos reservados.</p>
+                <p>Criado por <a href="https://instagram.com/tortelliweb" target="_blank" rel="noopener noreferrer">@tortelliweb</a></p>
                 <p>@chicogrill_01 &nbsp;<i class="fas fa-heart" style="color: var(--laranja)" aria-hidden="true"></i>&nbsp; 40+ unidades em SP</p>
             </div>
         </div>
